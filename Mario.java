@@ -2,6 +2,11 @@ package com.Harmon.Mario;
 
 import java.util.Scanner;
 
+/*
+ * The hash and square results make a box, so we check to see if the columns and rows
+ * square up
+ */
+
 public class Mario {
 
 	private int n; //// user input variable
@@ -21,8 +26,8 @@ public class Mario {
 		while
 			(n <= 0 || n >= 24);
 	/// when the user enters the correct input value //////
-	for(rows = 1; rows <= n; rows++){
-		for(columns = 1; columns <= n; columns++ ){
+	for(rows = 1; rows <= n; rows++){ // if the rows are less than the user input then keep adding 1
+		for(columns = 1; columns <= n; columns++ ){ // if the columns ar less than user input(n) add 1
 			if(columns >= n + 1 - rows){
 				System.out.print("#");/// print hashes when applicable       
 			}
